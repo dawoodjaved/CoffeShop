@@ -10,7 +10,7 @@ SECRET_KEY = 'i7v=ry2mk(gkab47rq+=n@4zjdkxldb*l7a4lr920e+t1yl@f2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["onlinecoffeshop.herokuapp.com","localhost"]
+ALLOWED_HOSTS = ["onlincoffee.herokuapp.com","localhost"]
 
 
 

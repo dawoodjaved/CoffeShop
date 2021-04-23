@@ -1,1 +1,1 @@
-web: gunicorn conceptu.wsgi
+web: waitress-serve --port=$PORT CoffeeShop.wsgi:application

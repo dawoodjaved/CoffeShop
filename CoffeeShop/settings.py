@@ -1,14 +1,15 @@
 
 import os
-import django_heroku
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'i7v=ry2mk(gkab47rq+=n@4zjdkxldb*l7a4lr920e+t1yl@f2'
 
-DEBUG = True
+SECRET_KEY = os.environ['SECRET_KEY']
 
-ALLOWED_HOSTS = []
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+
+ALLOWED_HOSTS = ["onlinecoffeshop.herokuapp.com","localhost"]
 
 
 
@@ -25,6 +26,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

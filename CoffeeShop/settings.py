@@ -4,13 +4,13 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'i7v=ry2mk(gkab47rq+=n@4zjdkxldb*l7a4lr920e+t1yl@f2'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["onlincoffee.herokuapp.com","localhost"]
+ALLOWED_HOSTS = ["polar-waters.herokuapp.com","localhost"]
 
 
 
@@ -64,7 +64,7 @@ DATABASES = {
     }
 }
 
-
+DATABASE_URL = 'postgres://fcxtranwobcwir:a289a459cc9c1f882ee2779ec1e5af86823d032d2e4ab53f6ce9aa4caa0dcf14@ec2-54-211-176-156.compute-1.amazonaws.com:5432/d4b78abqupu1jg'
 
 AUTH_PASSWORD_VALIDATORS = [
  

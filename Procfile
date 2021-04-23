@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT CoffeeShop.wsgi:application
+web: waitress-serve --port=8000 CoffeeShop.wsgi:application
